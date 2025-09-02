@@ -95,12 +95,13 @@ height: 100vh;
 }
 
 .hero h1 {
- font-size: 3.5rem;
+  font-size: 3.5rem;
   font-weight: 800;
   background: linear-gradient(90deg, #ff914d, #ff6f00);
-
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
+  color: #ff914d; /* fallback for browsers where gradient fails */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3); /* makes it readable */
 }
 
 .hero p {
